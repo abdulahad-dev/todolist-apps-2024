@@ -1,0 +1,85 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List Application</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.12/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body>
+    <div>
+        <div class="grid justify-center gap-2">
+            <div class="col-start-2 col-span-4 text-center text-3xl font-bold">To Do List Application</div>
+            <div class="col-start-1 col-end-3 ...">
+
+                <div class="mockup-phone">
+                    <div class="camera"></div>
+                    <div class="display">
+                        <div class="artboard artboard-demo phone-1">
+                            <h2>Create To Do List</h2>
+                            <form id="todolist-details" class="card-body" onsubmit="return false">
+                                <div class="form-control">
+                                    <label class="label">
+                                        <span class="label-text">Title</span>
+                                    </label>
+                                    <input id="title" type="text" placeholder="Title" class="input input-bordered"
+                                        required />
+                                </div>
+                                <div class="form-control">
+                                    <label class="label">
+                                        <span class="label-text">Note</span>
+                                    </label>
+                                    <textarea id="note" class="textarea textarea-error" placeholder="Note"></textarea>
+                                </div>
+                                <div class="form-control mt-6">
+                                    <button id="create-task" class="btn btn-primary">Create Tast</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-end-7 col-span-2 ...">
+                <div>
+                    <div class="mockup-phone border-primary">
+                        <div class="camera"></div>
+                        <div class="display">
+                            <div class="artboard artboard-demo phone-1 justify-start">
+                                <div class="overflow-x-auto">
+                                    <div class="overflow-x-auto">
+
+                                        <table class="table">
+                                            <thead>
+                                                <tr>
+                                                    <th></th>
+                                                    <th>
+                                                        <div class="flex w-full flex-col">
+                                                            <div class="pt-5 text-3xl">To Do List
+                                                            </div>
+                                                        </div>
+                                                    </th>
+                                                </tr>
+                                            </thead>
+                                            <tbody id="todolist-container">
+
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="js/todolist.js"></script>
+</body>
+
+</html>
